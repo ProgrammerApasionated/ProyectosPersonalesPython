@@ -1,0 +1,11 @@
+El Quijote,Miguel de Cervantes,1605,1001,False
+Cien años de soledad,Gabriel García Márquez,1967,1002,True
+1984,George Orwell,1949,1003,False
+La sombra del viento,Carlos Ruiz Zafón,2001,1004,False
+El nombre del viento,Patrick Rothfuss,2007,1005,True
+Fahrenheit 451,Ray Bradbury,1953,1006,False
+El principito,Antoine de Saint-Exupéry,1943,1007,False
+Los juegos del hambre,Suzanne Collins,2008,1008,True
+Orgullo y prejuicio,Jane Austen,1813,1009,False
+El señor de los anillos,J.R.R. Tolkien,1954,1010,False
+Daydream,Hannah Grace,2024,139852574,False

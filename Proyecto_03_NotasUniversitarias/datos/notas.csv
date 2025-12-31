@@ -1,0 +1,10 @@
+dni,nombre,correo,codigo_asig,nota
+12345678A,Ana López,ana.lopez@uji.es,MAT101,8.5
+12345678A,Ana López,ana.lopez@uji.es,FIS102,7.0
+12345678A,Ana López,ana.lopez@uji.es,PRO103,9.2
+98765432B,Juan Pérez,juan.perez@uji.es,MAT101,6.0
+98765432B,Juan Pérez,juan.perez@uji.es,FIS102,4.3
+11223344C,María Torres,maria.torres@uji.es,PRO103,5.5
+11223344C,María Torres,maria.torres@uji.es,MAT101,3.8
+55667788D,Carlos Ruiz,carlos.ruiz@uji.es,FIS102,9.0
+55667788D,Carlos Ruiz,carlos.ruiz@uji.es,PRO103,8.7

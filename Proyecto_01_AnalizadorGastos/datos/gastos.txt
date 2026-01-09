@@ -1,0 +1,62 @@
+2026-01-01, supermercado Mercadona, 34.20
+2026-01-01, gasolina Repsol, 52.00
+2026-01-02, Netflix mensual, 12.99
+2026-01-02, bar desayuno, 4.50
+2026-01-03, recibo luz Iberdrola, 61.30
+2026-01-03, restaurante japonés, 28.90
+2026-01-04, farmacia Cruz Verde, 15.75
+2026-01-04, metro TMB, 2.40
+2026-01-05, compra Amazon cables, 9.99
+2026-01-05, supermercado Consum, 22.10
+2026-01-06, gasolina Cepsa, 47.80
+2026-01-06, cine Yelmo, 8.50
+2026-01-07, Spotify Premium, 9.99
+2026-01-07, pizza Domino's, 14.20
+2026-01-08, recibo agua Facsa, 29.40
+2026-01-08, Uber al centro, 11.60
+2026-01-09, restaurante italiano, 32.00
+2026-01-09, supermercado Mercadona, 17.80
+2026-01-10, taxi aeropuerto, 23.50
+2026-01-10, muebles Ikea, 89.00
+2026-01-11, gasolina Repsol, 44.30
+2026-01-11, bar tapas, 18.70
+2026-01-12, internet Movistar, 39.90
+2026-01-12, supermercado Lidl, 16.40
+2026-01-13, metro TMB, 2.40
+2026-01-13, hamburguesería local, 12.50
+2026-01-14, farmacia Paracetamol, 6.20
+2026-01-14, cine Ocine, 7.90
+2026-01-15, gasolina Shell, 50.10
+2026-01-15, restaurante mexicano, 26.30
+2026-01-16, recibo luz Iberdrola, 63.10
+2026-01-16, supermercado Mercadona, 21.70
+2026-01-17, Uber trabajo, 9.80
+2026-01-17, bar desayuno, 3.90
+2026-01-18, Spotify Premium, 9.99
+2026-01-18, supermercado Consum, 25.60
+2026-01-19, gasolina Repsol, 48.20
+2026-01-19, cine Yelmo, 8.50
+2026-01-20, recibo agua Facsa, 31.10
+2026-01-20, restaurante chino, 19.40
+2026-01-21, metro TMB, 2.40
+2026-01-21, pizza Telepizza, 13.90
+2026-01-22, farmacia vitaminas, 12.30
+2026-01-22, supermercado Lidl, 18.20
+2026-01-23, gasolina Cepsa, 46.70
+2026-01-23, bar tapas, 17.60
+2026-01-24, internet Movistar, 39.90
+2026-01-24, supermercado Mercadona, 27.50
+2026-01-25, Uber casa-centro, 10.20
+2026-01-25, restaurante argentino, 35.80
+2026-01-26, cine Ocine, 7.90
+2026-01-26, supermercado Consum, 23.40
+2026-01-27, gasolina Shell, 49.90
+2026-01-27, bar desayuno, 4.10
+2026-01-28, recibo luz Iberdrola, 62.80
+2026-01-28, supermercado Lidl, 15.90
+2026-01-29, farmacia crema, 8.70
+2026-01-29, restaurante italiano, 29.50
+2026-01-30, metro TMB, 2.40
+2026-01-30, pizza Domino's, 14.80
+2026-01-31, supermercado Mercadona, 33.10
+2026-01-31, gasolina Repsol, 51.40

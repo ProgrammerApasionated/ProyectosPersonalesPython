@@ -37,7 +37,7 @@ def media_temperaturas(listas_temperaturas):
     for temperaturas in listas_temperaturas:
         suma_total_temperaturas += temperaturas
     media_total = suma_total_temperaturas / len(listas_temperaturas)
-    return media_total
+    return round(media_total,2)
 def maxima_temperatura(lista_temperaturas):
     temperatura_maxima = lista_temperaturas[0]
     for maxima in lista_temperaturas:
@@ -88,6 +88,7 @@ def racha_de_ola_de_frio(lista_temperaturas):
 
 def informe(lista_temp):
     media = media_temperaturas(lista_temp)
+    media = round(media,2)
     temp_max = maxima_temperatura(lista_temp)
     temp_min = minima_temperatura(lista_temp)
     long_max, may_inc, may_fin = racha_de_ola_de_frio(lista_temp)
@@ -100,21 +101,23 @@ def informe(lista_temp):
 
 def cargar_temperaturas_desde_fichero(nombre_fichero="temperaturas.txt"):
     lista = []
+    ruta = f"../data/{nombre_fichero}"
     try:
-        with open(nombre_fichero, "r") as f:
+        with open(ruta, "r") as f:
             for linea in f:
                 linea = linea.strip()
                 if linea != "":
                     lista.append(int(linea))
     except FileNotFoundError:
-        print(f"No existe el fichero '{nombre_fichero}'.")
+        print(f"No existe el fichero '{ruta}'.")
     return lista
 
 def guardar_temperaturas_en_fichero(lista, nombre_fichero="temperaturas.txt"):
-    with open(nombre_fichero, "w") as f:
+    ruta = f"../data/{nombre_fichero}"
+    with open(ruta, "w") as f:
         for temp in lista:
             f.write(f"{temp}\n")
-    print(f"Temperaturas guardadas en '{nombre_fichero}'.")
+    print(f"Temperaturas guardadas en '{ruta}'.")
 
 def line():
     print ("-" * 40)

@@ -1,7 +1,7 @@
 from estudiante import Estudiante
 from asignatura import Asignatura
 import csv
-# Parte que une todos los ficheros y incluye el menú interactivo.
+# Parte que une todos los ficheros e incluye el menú interactivo.
 def line():
     print ("-" * 40)
 def cargar_datos():
@@ -75,6 +75,7 @@ def gestionar_estudiantes(estudiantes):
             break
         else:
             print("Opción no válida.")
+
 def añadir_estudiante(estudiantes):
     dni = input("DNI del estudiante: ")
     nombre = input("Nombre del estudiante: ")
@@ -82,23 +83,28 @@ def añadir_estudiante(estudiantes):
     if dni in estudiantes:
         print("Ya existe un estudiante con ese DNI.")
         return
+    # Si encuentra el estudiante no devuelve nada. ***(1)***
     estudiantes[dni] = Estudiante(dni, nombre, correo)
     print("Estudiante añadido correctamente.")
+    # O crea un nuevo estudiante.
 
 def ver_estudiantes(estudiantes):
     line()
     if not estudiantes:
         print("No hay estudiantes registrados.")
         return
+    # Mismo caso que el anterior el caso 1.
     print("-" * 4 + " LISTA DE ESTUDIANTES " + "-" * 4)
     for estudiante in estudiantes.values():
         print(estudiante)
     line()
+
 def eliminar_estudiante(estudiantes):
     dni = input("Introduce el DNI del estudiante a eliminar: ")
     if dni not in estudiantes:
         print("No existe un estudiante con ese DNI.")
         return
+    # Mismo caso que el 1.
     del estudiantes[dni]
     print("Estudiante eliminado correctamente.")
     line()
@@ -123,11 +129,14 @@ def gestionar_asignaturas(asignaturas):
             break
         else:
             print("Opción no válida.")
+        # Bucle que entra siempre y solo sale con la opción de volver, la 4.
+
 def añadir_asignatura(asignaturas):
     codigo = input("Código de la asignatura (ABC123): ")
     # Creamos un objeto temporal para usar su validador
     inicializar = Asignatura(codigo, "", 0)
     while not inicializar.validar_codigo(codigo):
+        # Llamamos a la función previamente creado que devuelve true o false y comprobamos.
         print("Código inválido. Debe ser 3 letras + 3 números.")
         codigo = input("Introduce un código válido: ")
         inicializar = Asignatura(codigo, "", 0)
@@ -135,23 +144,29 @@ def añadir_asignatura(asignaturas):
     creditos = int(input("Créditos: "))
     asignaturas[codigo] = Asignatura(codigo, nombre, creditos)
     print("Asignatura añadida correctamente.")
+    # Y con los datos que faltan se crea una asignatura.
+
 def ver_asignaturas(asignaturas):
     if not asignaturas:
         print("No hay asignaturas registradas.")
         return
+    # Caso 1.
     line()
     print(4 * "-" + " LISTA ASIGNATURAS " + "-" * 4)
     for asignatura in asignaturas.values():
         print(asignatura)
     line()
+
 def eliminar_asignatura(asignaturas):
     codigo = input("Introduce el código de la asignatura a eliminar: ")
     if codigo not in asignaturas:
         print("No existe una asignatura con ese código.")
         return
+    # Caso 1.
     del asignaturas[codigo]
     print("Asignatura eliminada correctamente.")
     line()
+
 def gestionar_notas(estudiantes, asignaturas):
     while True:
         line()
@@ -176,6 +191,7 @@ def gestionar_notas(estudiantes, asignaturas):
         else:
             print("Opción no válida.")
         line()
+
 def añadir_nota(estudiantes, asignaturas):
     dni = input("DNI del estudiante: ")
     if dni not in estudiantes:
@@ -231,12 +247,11 @@ def ver_notas_estudiante(estudiantes):
     print(f"\nNotas de {estudiantes[dni].nombre}:")
     estudiantes[dni].mostrar_notas()
 
-
 def mostrar_estadisticas(estudiantes):
     if not estudiantes:
         print("No hay estudiantes registrados.")
         return
-    print("-" * 4 + " ESTADISTICAS " + "-" * 4)
+    print("-" * 4 + " ESTADÍSTICAS " + "-" * 4)
     total_notas = 0
     cantidad_notas = 0
     mejor_media = -1

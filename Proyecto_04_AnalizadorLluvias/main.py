@@ -1,6 +1,8 @@
 from lluvia import *
+
 def sep():
     print("-" * 40)
+
 def main():
     ruta = "datos/lluvias.txt"
     lista_lluvias = obtener_clase(ruta)

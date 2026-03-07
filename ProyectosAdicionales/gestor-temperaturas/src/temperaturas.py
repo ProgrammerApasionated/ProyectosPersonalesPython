@@ -18,7 +18,7 @@ def obtener_lista_temperaturas():
     return lista_temperaturas
 
 def eliminar_una_temperatura(lista_temperaturas):
-    valor = int (input ("Introduce el valor a borrar  "))
+    valor = float (input ("Introduce el valor a borrar  "))
     i = 0
     while i < len(lista_temperaturas):
         if lista_temperaturas[i] == valor :
@@ -107,7 +107,7 @@ def cargar_temperaturas_desde_fichero(nombre_fichero="temperaturas.txt"):
             for linea in f:
                 linea = linea.strip()
                 if linea != "":
-                    lista.append(int(linea))
+                    lista.append(float(linea))
     except FileNotFoundError:
         print(f"No existe el fichero '{ruta}'.")
     return lista

@@ -13,6 +13,7 @@ def leer_txt(ruta):
     try:
         with open(ruta, "r", encoding="utf-8") as f:
             return [linea.strip() for linea in f.readlines()]
+        # Lectura con este formato -> 10
     except FileNotFoundError:
         return []
 
@@ -38,11 +39,13 @@ def guardar_csv(ruta, lista_filas):
     with open(ruta, "w", encoding="utf-8") as f:
         for fila in lista_filas:
             f.write(",".join(map(str, fila)) + "\n")
+            # Escritura con este formato -> Azul,10,20,Rojo
 
 def cargar_csv(ruta):
     """Carga un archivo CSV y devuelve una lista de listas."""
     try:
         with open(ruta, "r", encoding="utf-8") as f:
             return [linea.strip().split(",") for linea in f.readlines()]
+        # Caso con datos similares a estos ->  Azul,10,20,Verde
     except FileNotFoundError:
         return []

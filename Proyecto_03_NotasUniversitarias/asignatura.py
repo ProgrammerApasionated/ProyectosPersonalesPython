@@ -1,5 +1,3 @@
-
-
 class Asignatura:
     def __init__(self, codigo, nombre, creditos):
         self.codigo = codigo.upper()
@@ -31,9 +29,9 @@ class Asignatura:
         primera_parte = codigo[:3]
         segunda_parte = codigo[3:]
         if not primera_parte.isalpha():
-            # No tiene letras los 3 primeros índices.
+            # No tiene letras la primera parte.
             return False
         if not segunda_parte.isdigit():
-            # No tiene dígitos los 3 últimos índices.
+            # No tiene dígitos la segunda parte.
             return False
         return True

@@ -1,8 +1,9 @@
 # Fichero que combina y crea el programa en general.
 from libro import Libro
+
 def line():
     print ("-" * 40)
-
+    # El rasgo distinto de la mayoría de proyectos, el separador.
 def cargar_libros():
     libros = {}
     try:
@@ -13,11 +14,13 @@ def cargar_libros():
     except FileNotFoundError:
         print("No existe biblioteca.txt, se creará al guardar.")
     return libros
+
 def guardar_libros(libros):
     with open("datos/biblioteca.txt", "w", encoding="utf-8") as f:
         for libro in libros.values():
             f.write(libro.to_linea() + "\n")
     print("Libros guardados correctamente.")
+
 def mostrar_menu():
     line()
     print("-" * 4 + " MENú PRINCIPAL " + "-" * 4)
@@ -33,7 +36,6 @@ def main():
     libros = cargar_libros()
     while True:
         opcion = mostrar_menu()
-
         if opcion == "1":
             gestionar_libros(libros)
         elif opcion == "2":
@@ -46,6 +48,7 @@ def main():
             break
         else:
             print("Opción no válida.")
+
 def gestionar_libros(libros):
     while True:
         line()
@@ -69,6 +72,7 @@ def gestionar_libros(libros):
             break
         else :
             print("Opción invalida")
+
 def añadir_libro(libros):
     titulo = input("Introduzca el título del libro: \n")
     while titulo == "":
@@ -88,6 +92,7 @@ def añadir_libro(libros):
     libro_nuevo = Libro(titulo, autor, int(año), isbn)
     libros[isbn] = libro_nuevo
     print("Libro añadido correctamente.")
+
 def ver_libros(libros):
     if not libros:
         print("No hay libros registrados.")
@@ -96,6 +101,7 @@ def ver_libros(libros):
     for libro in libros.values():
         cant_libros += 1
         print(f"[{cant_libros}]   -> [{libro}]")
+
 def elim_libro(libros):
     isbn = input("Introduce el isbn del libro a eliminar: ")
     if isbn not in libros:
@@ -104,6 +110,7 @@ def elim_libro(libros):
     del libros[isbn]
     print("Libro eliminado correctamente.")
     line()
+
 def busc_libro(libros):
     isbn = input("Introduce el isbn del libro a encontrar: \n")
     if isbn not in libros:
@@ -111,6 +118,7 @@ def busc_libro(libros):
         return
     print (libros[isbn])
     line()
+
 def gestionar_prestamos(libros):
     while True:
         line()
@@ -140,6 +148,7 @@ def gestionar_prestamos(libros):
             break
         else:
             print("Opción inválida.")
+
 def mostrar_estadisticas(libros):
     line()
     print("-" * 4 + " ESTADÍSTICAS " + "-" * 4)
@@ -166,5 +175,6 @@ def mostrar_estadisticas(libros):
     print(f"Autor más frecuente: {autor_mas_frecuente}")
     print(f"Año más común: {año_mas_comun}")
     line()
+
 if __name__ == "__main__":
     main()

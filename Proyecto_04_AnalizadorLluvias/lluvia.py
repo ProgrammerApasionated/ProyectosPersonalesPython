@@ -1,9 +1,11 @@
 # Inicializamos las características que tienen las lluvias.
+
 class Precipitaciones:
     def __init__(self,cantidad,localidad,temperatura):
         self.cantidad = cantidad
         self.localidad = localidad
         self.temperatura = temperatura
+
 def obtener_clase(ruta):
     lista = []
     with open (ruta, "r", encoding="utf-8") as f:
@@ -13,6 +15,7 @@ def obtener_clase(ruta):
             clase = Precipitaciones (float(cant),local,float(temp))
             lista.append(clase)
     return lista
+
 def lluvia_maxima(lista_lluvias):
     max_lluvia = None
     max_local = None
@@ -21,6 +24,7 @@ def lluvia_maxima(lista_lluvias):
             max_lluvia = lluvia.cantidad
             max_local = lluvia.localidad
     return max_lluvia, max_local
+
 def media_lluvias(lista_lluvia):
     media = 0
     cant_localidades = 0
@@ -29,6 +33,7 @@ def media_lluvias(lista_lluvia):
         media += lluvia.cantidad
     media = media / cant_localidades
     return round(media,2)
+
 def temp_minima(lista_objetos):
     temp_min = None
     localidad_min = None
@@ -37,6 +42,7 @@ def temp_minima(lista_objetos):
             temp_min = temperatura.temperatura
             localidad_min = temperatura.localidad
     return temp_min, localidad_min
+
 def temp_media(lista_obje):
     media = 0
     cant_localidades = 0
@@ -45,11 +51,13 @@ def temp_media(lista_obje):
         media += temperatura.temperatura
     media = media / cant_localidades
     return round(media,2)
+
 def ranking_lluvias(lista_objetos):
     lista_ordenada = sorted(lista_objetos, key=lambda x: x.cantidad, reverse=True)
     return lista_ordenada
+
 def mostrar_ranking(lista_ordenada):
-    print("\n--- Ranking de Lluvias ---")
+    print("-" * 4 +  "Ranking de Lluvias" + 4 * "-")
     posicion = 1
     for obj in lista_ordenada:
         print(f"{posicion}. {obj.localidad} – {obj.cantidad} mm")

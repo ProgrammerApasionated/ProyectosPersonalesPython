@@ -1,0 +1,35 @@
+Valencia PaellaProgress Izquierda 5021
+Valencia ByteConservador Derecha 7999
+Valencia FallasNeutrales Centro 4096
+
+Madrid CalamaresLibres Centro 6123
+Madrid ScriptCastizo Izquierda 3141
+Madrid MetroOptimizado Derecha 2048
+
+Barcelona KernelCatalà Izquierda 7331
+Barcelona SagradaUpdate Centro 5888
+Barcelona TapasPrivatizadas Derecha 3210
+
+Sevilla GitFlamenco Izquierda 4520
+Sevilla FeriaEficiente Derecha 7100
+Sevilla AzaharModular Centro 3777
+
+Bilbao PintxoDev Izquierda 6901
+Bilbao GuggenheimCloud Centro 5301
+Bilbao AthleticLegacy Derecha 3102
+
+Murcia HuertaOpenSource Izquierda 3888
+Murcia PaparajoteEnterprise Derecha 4200
+Murcia RouterMurciano Centro 2999
+
+Zaragoza EbroRefactor Izquierda 4801
+Zaragoza MañoConcurrente Centro 3303
+Zaragoza PilarStableRelease Derecha 6102
+
+Granada AlhambraAsync Izquierda 3133
+Granada SierraNevadaLTS Centro 1604
+Granada TintoDeVeranoPro Derecha 4201
+
+Alicante PlayaResponsive Derecha 6960
+Alicante BenidormBeta Izquierda 1818
+Alicante TuristasConcurrentes Centro 1235

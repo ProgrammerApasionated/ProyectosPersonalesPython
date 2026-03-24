@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Detergente",
+        "cantidad": 60,
+        "precio": 4.99
+    },
+    {
+        "nombre": "Papel higiénico",
+        "cantidad": 120,
+        "precio": 3.2
+    },
+    {
+        "nombre": "Agua mineral",
+        "cantidad": 200,
+        "precio": 0.5
+    },
+    {
+        "nombre": "Cereales",
+        "cantidad": 35,
+        "precio": 2.8
+    },
+    {
+        "nombre": "Tomates",
+        "cantidad": 45,
+        "precio": 1.3
+    },
+    {
+        "nombre": "Azul",
+        "cantidad": 20,
+        "precio": 20.2
+    }
+]

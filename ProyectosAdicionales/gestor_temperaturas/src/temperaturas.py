@@ -170,7 +170,7 @@ def menu(lista_temp):
             if long_ == 0:
                 print("No ha habido ola de frío.")
             else:
-                print(f"Ola de frío de {long_} días, desde {ini} hasta {fin}.")
+                print(f"Ola de frío de {long_} días, desde el dia {ini} hasta el dia {fin}.")
             line()
         elif op == "6":
             line()

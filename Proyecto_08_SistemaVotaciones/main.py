@@ -29,7 +29,7 @@ def obtener_partidos_manual():
 
     return pais
 
-def cargar_partidos_desde_fichero(nombre_fichero="partidos.txt"):
+def cargar_partidos_desde_fichero(nombre_fichero="votos.txt"):
     pais = Pais("País desde fichero")
     ciudades_dict = {}
     try:
@@ -51,7 +51,7 @@ def cargar_partidos_desde_fichero(nombre_fichero="partidos.txt"):
 
     except FileNotFoundError:
         print(f"No se encontró el fichero '{nombre_fichero}'")
-
+    print ("Se ha cargado el país correctamente.")
     return pais
 
 def guardar_partidos_en_fichero(pais, nombre_fichero="partidos.txt"):
